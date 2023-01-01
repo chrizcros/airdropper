@@ -120,4 +120,5 @@ const assetIdBlacklist = [
   '8e74c085955f44ca165ef411bbea170218e00b6fc435749356c315684269746c616e647341314e30303932', // 1 legendary (92)
 ]
 
+console.log(`Snapshot taken ${new Date()}`)
 run('8e74c085955f44ca165ef411bbea170218e00b6fc435749356c31568', 2, assetIdBlacklist)
