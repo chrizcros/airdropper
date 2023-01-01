@@ -10,5 +10,7 @@
   "types": ["jest"],
   "typeRoots": ["types"],
   "include": ["src/**/*", "types/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "exclude": ["node_modules", "**/*.spec.ts"],
+  "outDir": "lib",
+  "rootDir": "src"
 }
