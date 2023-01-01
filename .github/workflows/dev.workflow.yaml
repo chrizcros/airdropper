@@ -3,7 +3,7 @@ name: Pick Winner
 on: push
 
 jobs:
-  pick-winner:
+  install-and-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -11,6 +11,6 @@ jobs:
         with:
           node-version: '16'
       - run: yarn install
-      - run: >
-          BLOCKFROST_SECRET=${{ secrets.BLOCKFROST_SECRET }}
-          yarn test
+      - run: yarn test
+        env:
+          BLOCKFROST_SECRET: ${{ secrets.BLOCKFROST_SECRET }}
